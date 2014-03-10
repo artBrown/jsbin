@@ -244,6 +244,8 @@ function updateCode(panelId, callback) {
         saveCode('save', true, function (data) {
           // savedAlready = data.checksum;
         });
+      } else {
+        jsbin.state.latest = true;
       }
     },
     error: function (jqXHR) {
