@@ -65,7 +65,7 @@
               <form>
                 {{#feature request "revisionless"}}
                 <div id="sharebintype" data-desc="Streaming state of the bin when it's shared">
-                  <strong>Share</strong>
+                  <strong>Bin state</strong>
                   <ul class="inline">
                     <li><label><input type="radio" name="realtime" checked value="realtime"> Latest</label></li>
                     <li><label><input type="radio" name="realtime" class="lockrevision" value="snapshot"> Snapshot</label></li>
@@ -552,7 +552,8 @@ Include alerts, prompts &amp; confirm boxes">Run with JS</button>
   {{#if concat}}
 <script src="{{static}}/js/prod/jsbin-{{version}}.js"></script>
   {{else}}
-    {{#scripts}}<script src="{{../static}}{{.}}"></script>{{/scripts}}
+    {{#scripts}}<script src="{{../static}}{{.}}"></script>
+    {{/scripts}}
   {{/if}}
 {{/if}}
 {{#if live}}
